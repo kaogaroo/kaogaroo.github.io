@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Domine:wght@400..700&display=swap');
+
+#wrapper {
+    padding-top: 7vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+html {
+    background-color: #1c1c1a;
+    color: #f5f5f0;
+}
+
+p {
+    font-family: "Domine", sans-serif;
+    font-optical-sizing: auto; 
+    padding-bottom: 5vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Crimson Text", sans-serif;
+    font-weight: 900;
+    font-optical-sizing: 2rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    gap: 20px; /* Space between image and text */
+}
+
+img {
+    max-height: 60vh; /* Set a fixed width for the image */
+    max-width: auto;
+    width: 65rem;
+    object-fit: contain;
+    border-radius: 5rem;
+}
+
+.fade-in {
+    opacity: 0; /* Start invisible */
+    transition: opacity 1s ease-out; /* Smooth transition */
+}
+
+/* Final state of the element */
+.fade-in.visible {
+    opacity: 1; /* Make visible */
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#wrapper {
+    padding-top: 7vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto; 
+    padding-bottom: 5vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-optical-sizing: auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    gap: 20px; /* Space between image and text */
+}
+
+img {
+    max-height: 60vh; /* Set a fixed width for the image */
+    width: auto;
+    object-fit: contain;
+    border-radius: 5rem;
+}
+
+.fade-in {
+    opacity: 0; /* Start invisible */
+    transition: opacity 1s ease-out; /* Smooth transition */
+}
+
+/* Final state of the element */
+.fade-in.visible {
+    opacity: 1; /* Make visible */
+}
